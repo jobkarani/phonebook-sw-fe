@@ -4,6 +4,7 @@ import { ContactDetailsComponent } from './contact-details/contact-details.compo
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { HomeComponent } from './home.component';
 import { IndexComponent } from './index/index.component';
+import { UpdateContactComponent } from './update-contact/update-contact.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
         {path:"",component:ContactListComponent},
         {path:"create",component:IndexComponent},
         {path:"contact-details/:id",component:ContactDetailsComponent},
+        {path:"update-contact/:id",component:UpdateContactComponent},
       ],
   }
 ];

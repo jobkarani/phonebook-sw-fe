@@ -1,21 +1,42 @@
 <div class="container-full bg-blue">
   <h2>Create Contact</h2>
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <label>First Name:</label>
-    <input type="text" formControlName="firstName" required>
 
-    <label>Last Name:</label>
-    <input type="text" formControlName="lastName" required>
+    <div class="row mb-3">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">First Name:</label>
+      <div class="col-sm-10">
+        <input type="text" formControlName="firstName" required class="form-control form-control-sm" id="colFormLabelSm" placeholder="first name">
+      </div>
+    </div>
 
-    <label>Email:</label>
-    <input type="email" formControlName="email" required>
+    <div class="row mb-3">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Last Name:</label>
+      <div class="col-sm-10">
+        <input type="text" formControlName="lastName" required class="form-control form-control-sm" id="colFormLabelSm" placeholder="last name">
+      </div>
+    </div>
 
-    <label>Phone Number:</label>
-    <input type="number" formControlName="phoneNumber">
+    <div class="row mb-3">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" formControlName="email" required class="form-control form-control-sm" id="colFormLabelSm" placeholder="email">
+      </div>
+    </div>
 
-    <label>Location:</label>
-    <input type="text" formControlName="location">
+    <div class="row mb-3">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Phone Number:</label>
+      <div class="col-sm-10">
+        <input type="number" formControlName="phoneNumber" class="form-control form-control-sm" id="colFormLabelSm" placeholder="phone number">
+      </div>
+    </div>
 
-    <button type="submit" [disabled]="contactForm.invalid">Create</button>
+    <div class="row mb-3">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Location:</label>
+      <div class="col-sm-10">
+        <input type="text" formControlName="location" class="form-control form-control-sm" id="colFormLabelSm" placeholder="location">
+      </div>
+    </div>
+
+    <button class="btn btn-outline-success" type="submit" [disabled]="contactForm.invalid">Create</button>
   </form>
 </div>

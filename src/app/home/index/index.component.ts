@@ -25,7 +25,7 @@ export class IndexComponent implements OnInit {
       this.contactForm = this.fb.group({
         firstName: ['', Validators.required],
         lastName: ['', Validators.required],
-        email: ['', [Validators.required, Validators.email]],
+        email: ['', [Validators.required]],
         phoneNumber: [''],
         location: ['']
       });

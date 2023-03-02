@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
+import { UpdateContactComponent } from './update-contact/update-contact.component';
 
 
 
@@ -16,6 +17,7 @@ import { ContactDetailsComponent } from './contact-details/contact-details.compo
     IndexComponent,
     ContactListComponent,
     ContactDetailsComponent,
+    UpdateContactComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,36 @@
+<div class="container-full">
+    <h2>Edit Contact</h2>
+    <form>
+      <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">First Name:</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="contact[0].firstName" name="firstName" required class="form-control form-control-sm" id="colFormLabelSm" placeholder="first name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Last Name:</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="contact[0].lastName" name="lastName" required class="form-control form-control-sm" id="colFormLabelSm" placeholder="last name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email:</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="contact[0].email" name="email" required class="form-control form-control-sm" id="colFormLabelSm" placeholder="email">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Phone Number:</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="contact[0].phoneNumber" name="phoneNumber" class="form-control form-control-sm" id="colFormLabelSm" placeholder="phone number">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Location:</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="contact[0].location" name="location" class="form-control form-control-sm" id="colFormLabelSm" placeholder="location">
+        </div>
+      </div>
+      <button class="btn btn-outline-success" (click)="updateContact()">Update</button>
+    </form>
+</div>

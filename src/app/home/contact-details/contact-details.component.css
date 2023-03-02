@@ -1,3 +1,29 @@
+.container-full{
+    margin: 5% 20%;
+}
+
+h2{
+    text-align: center;
+    margin: 5%;
+    font-size: 28px;
+}
+
+.cont{
+    border: 1px solid #999;
+    border-radius: 15px;
+}
+
+.cont, .d-flex{
+    width: 100%;
+    padding: 20px 40px;
+}
+
 p{
-    color: black;
+    font-size: 18px;
+}
+
+.btn{
+    font-size: 16px;
+    padding: 5px 30px;
+    margin-left: 10px;
 }

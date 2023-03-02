@@ -1,8 +1,16 @@
 <div class="contact-list">
     <h2>Contact List</h2>
-    <ul>
-      <li *ngFor="let contact of contacts">
-        <a [routerLink]="['/home/contact-details/',contact.id]">{{ contact.firstName }} {{ contact.lastName }} - {{ contact.phoneNumber }}</a>
+    <div id="btnContainer">
+      <button class="btnn active" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+      <button class="btnn" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+    </div>
+    <br>
+    <ul class="row">
+      <li class="column" *ngFor="let contact of contacts">
+        <a class="a-link" [routerLink]="['/home/contact-details/',contact.id]">{{ contact.firstName }} {{ contact.lastName }}</a>
+        <a  [routerLink]="['/home/contact-details/',contact.id]" class="btn btn-outline-info">View</a>
+        <a  [routerLink]="['/home/update-contact/',contact.id]" class="btn btn-outline-warning">Edit</a>
+        <button class="btn btn-outline-danger" (click)="deleteContact(contact.id)">Delete</button>
       </li>
     </ul>
 </div>
