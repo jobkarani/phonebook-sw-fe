@@ -1,0 +1,21 @@
+<div class="container-full bg-blue">
+  <h2>Create Contact</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label>First Name:</label>
+    <input type="text" formControlName="firstName" required>
+
+    <label>Last Name:</label>
+    <input type="text" formControlName="lastName" required>
+
+    <label>Email:</label>
+    <input type="email" formControlName="email" required>
+
+    <label>Phone Number:</label>
+    <input type="number" formControlName="phoneNumber">
+
+    <label>Location:</label>
+    <input type="text" formControlName="location">
+
+    <button type="submit" [disabled]="contactForm.invalid">Create</button>
+  </form>
+</div>

@@ -1,1 +1,17 @@
-
+<header>
+    <div class="container">
+      <div class="flexa text-center">
+        <div class="menu-icon" [class.menu-icon-Class]="menu_icon_var" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu" [class.menuClass]="menuVar">
+          <ul>
+            <li><a class="nav-link" routerLink="/home" routerLinkActive="active-link" ariaCurrentWhenActive="page">contact list</a></li>
+            <li><a class="nav-link" routerLink="/home/create" routerLinkActive="active-link" ariaCurrentWhenActive="page">create</a></li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+  </header>

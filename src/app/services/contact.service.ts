@@ -8,7 +8,7 @@ import { Contact } from '../interfaces/contact';
 })
 export class ContactService {
 
-  baseUrl = 'http://127.0.0.1:8000/contacts/';
+  baseUrl = 'https://phonebook-sw-be-production.up.railway.app/contacts/';
 
   constructor(private http: HttpClient) { }
 
