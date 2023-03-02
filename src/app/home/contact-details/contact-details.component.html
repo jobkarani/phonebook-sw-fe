@@ -1,1 +1,15 @@
-<p>contact-details works!</p>
+<div class="container">
+  <h2>Contact Details</h2>
+
+  <div *ngIf="contact">
+    <p><strong>First Name:</strong> {{ contact[0].firstName }}</p>
+    <p><strong>Last Name:</strong> {{ contact[0].lastName }}</p>
+    <p><strong>Email:</strong> {{ contact[0].email }}</p>
+    <p><strong>Phone Number:</strong> {{ contact[0].phoneNumber }}</p>
+    <p><strong>Location:</strong> {{ contact[0].location }}</p>
+  </div>
+  <div>
+    <button (click)="deleteContact(contact[0].id)">Delete</button>
+  </div>
+  <button routerLink="/home">Back to Contacts</button>
+</div>
